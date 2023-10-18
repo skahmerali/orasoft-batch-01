@@ -1,0 +1,51 @@
+/* h2{
+    color: green;
+}
+
+
+
+.note{
+    color: gray;
+} */
+
+* {
+    margin: 0px;
+}
+
+h1,
+h2,
+p {
+    color: red;
+    background-color: rgb(0, 129, 0);
+}
+
+h2 {
+    background-color: rgba(0, 129, 0, 0.5);
+}
+
+h2.heading {
+    color: #ee3e80;
+    color: rgba(0, 129, 0, 0.5);
+
+}
+
+#para,
+#para1 {
+    color: blue;
+}
+
+/* li{
+    color : red
+} */
+
+ul>li,
+ul>a {
+    color: blue;
+}
+
+
+h2.heading {
+    color: #ee3e80;
+    /* color: rgba(0, 129, 0, 0.5); */
+
+}
