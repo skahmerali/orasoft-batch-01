@@ -9,12 +9,62 @@
 
 <body>
     <!-- <a href="JavaScript:void(0)fdjalsk" on="getuser()">Click</a> -->
+    <!-- 
+    <input type="text" size="30" onblur="this.style.backgroundColor='green';"
+        onFocus="this.style.backgroundColor='yellow';"> -->
 
-    <input type="text" size="30" onblur="this.style.backgroundColor='green';" onFocus="this.style.backgroundColor='yellow';">
+    <!-- <form action="#">
+
+        <label for="firstname">
+            First Name :
+            <input type="text" name="firstname" id="fname">
+        </label>
+
+        <label for="alsttname">
+            last Name :
+            <input type="text" name="lastname" id="lname">
+        </label>
+
+
+        <label for="gender">
+            Seclect Gender
+
+            Male <input id="male" type="radio" name="gender" value="male" checked>
+            feMale <input id="feMale" type="radio" name="gender" value="famale">
+        </label>
+
+        <button type="submit" onclick="loginDAta(event)">Login</button>
+
+    </form> -->
     <!-- <input type="text"> -->
-    <script src="./index.js">
+    <!-- <script src="./index.js">
+        function loginDAta(event) {
+            event.preventdefault()
+            let fname = document.getElementById('fname')
+            let lname = document.getElementById('lname')
 
+            console.log(fname, lname)
+        }
+    </script> -->
+    <script>
+
+        function loginDAta(event) {
+            event.preventDefault()
+            let fname = document.getElementById('fname')
+            let lname = document.getElementById('lname')
+            let gender
+
+            console.log(document.getElementById('male').checked)
+            if (document.getElementById('male').checked) {
+                gender = document.getElementById('male').value
+            } else {
+                // console.log(document.getElementById('feMale').value)
+                gender = document.getElementById('feMale').value
+            }
+            // console.log(fname, lname)
+        }
     </script>
 </body>
+
 
 </html>
