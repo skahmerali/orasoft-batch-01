@@ -1,4 +1,4 @@
-/* .App {
+.App {
   text-align: center;
 }
 
@@ -35,15 +35,4 @@
   to {
     transform: rotate(360deg);
   }
-} */
-
-
-.fullname{
-  color: red;
-}
-
-.aboutt{
-  color: red;
-  background-color: aquamarine;
-  box-sizing: border-box;
 }
