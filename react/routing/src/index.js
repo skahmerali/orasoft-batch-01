@@ -5,6 +5,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./components/home/home";
 import About from "./components/about";
 import Contact from "./components/contact/contact";
+import NotFound from "./components/notFound/NotFound";
+import Products from "./components/products/products";
+import ProductDetail from "./components/productDetail/ProductDetail";
 
 let router = createBrowserRouter([
   {
@@ -18,6 +21,24 @@ let router = createBrowserRouter([
   {
     path: "/contact",
     element: <Contact />,
+  },
+  {
+    path: "/products",
+    element: <Products />,
+    loader: () => {
+      let allposts = fetch("https://jsonplaceholder.typicode.com/photos")
+        .then((response) => response.json())
+        .then((json) => json);
+      return allposts;
+    },
+  },
+  {
+    path: "/product-detail/:productid",
+    element: <ProductDetail />,
+  },
+  {
+    path: "*",
+    element: <NotFound />,
   },
 ]);
 
