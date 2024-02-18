@@ -17,6 +17,9 @@ function NavBar() {
         <Link to={"/products"}>
           <li>Products</li>
         </Link>
+        <Link to={"/memo"}>
+          <li>memo</li>
+        </Link>
       </ul>
     </div>
   );
