@@ -1,15 +1,13 @@
 import "./App.css";
-import Counter from "./counter/counter";
 import LearnCallback from "./functions/callback";
+import Home from "./learningProps/Home";
 
 function App() {
-  
-
-
   return (
     <>
       {/* <Counter /> */}
-      <LearnCallback />
+      {/* <LearnCallback /> */}
+      {/* <Home /> */}
     </>
   );
 }

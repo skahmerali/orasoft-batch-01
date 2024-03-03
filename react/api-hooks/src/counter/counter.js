@@ -5,7 +5,6 @@ import { useState, useEffect } from "react";
 function Counter() {
   const [counter, setCounter] = useState(1);
   const [counter1, setCounter1] = useState(1);
-  const [todoData, setTodoData] = useState(1);
 
   // useEffect(
   //   function () {
