@@ -1,19 +1,13 @@
-import { useState } from "react";
-import "./App.css";
-import Products from "./components/Products";
-
-function App() {
-  // const [user, setUser] = useState({
-  //   name: "zubair",
-  //   address: "xyz",
-  //   country: "pakistan",
-  // });
-  return (
-    <>
-      <h1>this is app component</h1>;
-      <Products />
-    </>
-  );
-}
-
-export default App;
+import { createBrowserRouter } from "react-router-dom";
+import Home from "./components/Home";
+import Login from "./components/login";
+export const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/login",
+    element: <Login />,
+  }
+]);
