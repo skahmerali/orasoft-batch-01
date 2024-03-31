@@ -8,8 +8,8 @@ function Home() {
     <div>
       <h1>This is home parent component</h1>
       <HomeChild1 name="zubir" />
-      <HomeChild2 />
-      <HomeChild3 />
+      {/* <HomeChild2 /> */}
+      {/* <HomeChild3 /> */}
     </div>
   );
 }

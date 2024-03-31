@@ -7,7 +7,8 @@ function App() {
     <>
       {/* <Counter /> */}
       {/* <LearnCallback /> */}
-      {/* <Home /> */}
+      <Home />
+      
     </>
   );
 }
