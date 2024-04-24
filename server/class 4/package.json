@@ -1,0 +1,16 @@
+{
+  "name": "class-4",
+  "version": "1.0.0",
+  "description": "this is an api code ",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm start",
+    "start": "nodemon server.js"
+  },
+  "author": "sk ahmer ali",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}
