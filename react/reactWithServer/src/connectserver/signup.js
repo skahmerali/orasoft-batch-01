@@ -18,6 +18,18 @@ function SignUp() {
             console.log(error);
           });
     } 
+    const SignInUser = () =>{
+        axios.post('http://localhost:5000/login', {
+            "email": "example@example.com",
+            "password": "examplepassword"
+        })
+          .then(function (response) {
+            console.log(response);
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+    } 
 
 
 
@@ -47,6 +59,7 @@ function SignUp() {
         </div>
         <div>
             <button onClick={SignUpUser}>SignUp</button>
+            <button onClick={SignInUser}>Sign User</button>
         </div>
     </div>
   )
